@@ -14,7 +14,7 @@ namespace TestApp.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "val1", "val2", "val3", "val4", "val5" };
+            return new string[] { "Canada", "Day", "Australia", "Day!" };
         }
 
         // GET api/values/5
