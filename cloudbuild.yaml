@@ -17,8 +17,8 @@ steps:
 
 # Build the app image.
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/testapp', '.' ]
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/testapp:$BUILD_ID', '.' ]
   dir: './bin/Release/netcoreapp1.1/publish'
 
 # Publish the app.
-images: [ 'gcr.io/$PROJECT_ID/testapp' ]
+images: [ 'gcr.io/$PROJECT_ID/testapp:$BUILD_ID' ]
