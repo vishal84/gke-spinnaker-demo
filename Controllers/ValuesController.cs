@@ -14,7 +14,7 @@ namespace TestApp.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Canada", "Day", "Australia", "Day!" };
+            return new string[] { "This is a long string that we will replace and do a rolling deployment with Spinnaker on GKE with." };
         }
 
         // GET api/values/5
